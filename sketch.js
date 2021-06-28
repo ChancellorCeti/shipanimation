@@ -1,5 +1,6 @@
 var seaImg;
 var shipImg1;
+var sea;
 function preload(){
   seaImg = loadImage("sea.png");
   shipImg1 = loadAnimation("ship-1.png","ship-2.png");
@@ -7,7 +8,7 @@ function preload(){
 
 function setup(){
   createCanvas(400,400);
-  var sea = createSprite(200,200,40,40);
+  sea = createSprite(200,200,40,40);
   sea.addImage(seaImg);
   var ship = createSprite(150,200,50,20);
   ship.addAnimation("shipanimation",shipImg1);
